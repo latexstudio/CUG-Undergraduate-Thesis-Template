@@ -1,4 +1,8 @@
-								https://www.tug.org/TUGboat/tb25-1/beebe-2003keynote.pdf
+
+本项目在github地址  https://github.com/CUG-Onion/CUG-Undergraduate-Thesis-Template
+
+
+	https://www.tug.org/TUGboat/tb25-1/beebe-2003keynote.pdf
 
 
 两个文档目录下均有相应的各文件关系图解，先查看以便理解
