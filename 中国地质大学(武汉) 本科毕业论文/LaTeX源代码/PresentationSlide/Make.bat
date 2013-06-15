@@ -2,8 +2,8 @@
 ::删除原pdf文件同时作备份源文件到当前用户的桌面,随时备份文件是很重要的
 ::参看http://blog.csdn.net/wzsbll/article/details/6690895
 del *.pdf
-::del /Q /S %HOMEDRIVE%%HOMEPATH%\Desktop\PresentationSlide\*
-XCOPY  "*"   %HOMEDRIVE%%HOMEPATH%\Desktop\PresentationSlide /E /Y /D
+::del /Q /S "%HOMEDRIVE%%HOMEPATH%\Desktop\PresentationSlide\*"
+XCOPY  "*"  "%HOMEDRIVE%%HOMEPATH%\Desktop\PresentationSlide" /E /Y /D
 @pause
 ::exit
 
