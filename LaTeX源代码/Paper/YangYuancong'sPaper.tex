@@ -69,7 +69,7 @@
 \iftagged{Email}{
 \graphicspath{{PictureData/Email/}{PictureData/Common/}}}{\graphicspath{{PictureData/Print/}{PictureData/Common/}}}
 %%使用图片时最好不要加扩展名，增加自由度，LaTeX会自动按照.png->.pdf->.jpg->.mps->.jpeg->.jbig2->.jb2->.PNG->.PDF->.JPG->.JPEG->.JBIG2->.JB2 的优先级顺序来查找文件,也不要带路径，使用\graphicspath{{path1}{path2}{...}}来告诉latex该在哪些地方找图片
-%\usetag{Digital}      %黑白打印时注释此行              % \iftagged{条件}{真}{假}   %http://mirrors.ustc.edu.cn/CTAN/macros/latex/contrib/tagging/tagging.pdf
+\usetag{Digital}      %黑白打印时注释此行              % \iftagged{条件}{真}{假}   %http://mirrors.ustc.edu.cn/CTAN/macros/latex/contrib/tagging/tagging.pdf
 %设置链接
 \iftagged{Digital}{
 %电子版 or 彩色打印时
