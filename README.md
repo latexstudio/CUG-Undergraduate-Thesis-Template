@@ -8,6 +8,7 @@ CUG-Undergraduate-Thesis-Template
 
 请先阅读:http://bbs.cnool.net/cthread-4388587.html
 
+LaTeX与Word比较: http://zzg34b.w3.c361.com/homepage/compareWord.htm
 
 ================================================
 
