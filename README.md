@@ -14,6 +14,8 @@ CUG-Undergraduate-Thesis-Template
 
 
 如果很不幸(当然，我是十分幸运的)，万一你遇到了一个只知道Word，要求必需提交doc格式论文的老师(我想地大因该不会有这样的情况吧),   DON'T PANIC!,只需三步，文论就可以编成doc格式:
+
+
 1.编译得到pdf;
 
 
