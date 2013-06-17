@@ -336,7 +336,7 @@
  \ifpdf             %由于在Linux下和windows下首页的logo放置位置稍有不同，加上下面的条件判断
     \pgfputat{\pgfxy(-2.120,-0.60272)}{\pgfbox[left,base]{\pgfuseimage{CUGLogoHome}}}  %启用主文件中的\input{Sections/Silder_DisplayTheFrameLayout.tex}，获得一帧的布局，①、 ②的值分别对应坐标(x,y)(两条虚线的交点)为当前页面的坐标原点，y为上正下负，x右正左负
  \fi                                                                                                                                                %\pgfputat放置图片的左下角将基于“原点”，通过观察latout显示的信息可以精确的放置图片，假如当前两条虚线的交点距页面的左边界和上边界分别为2cm和3cm，如果图片要紧靠左上角
-     \ifxetex                                                                                                                                   %则\pgfxy的参数应为(-20cm,height-30) height为图片高度，这样图片就能紧靠左边界和上边界放置了，这样的计算并不准确只能做参考
+     \ifxetex                                                                                                                                   %则\pgfxy的参数应为(-2cm,height-3cm) height为图片高度，这样图片就能紧靠左边界和上边界放置了，这样的计算并不准确只能做参考
    \pgfputat{\pgfxy(-2.5441,1.666445)}{\pgfbox[left,base]{\pgfuseimage{CUGLogoHome}}}  %在本演示文稿中，已经设定宽度为整个页面宽度，虚线交点为(1inch,1inch),作为参考，一点一点的试，直到找到最合适的值，单位为cm  各单位换算关系访问 http://en.wikibooks.org/wiki/LaTeX/Lengths
        \fi                                                                                                                                          %针对本文件(CUGLogoHome.pdf)默认页面大小128mm × 96mm在标题(titile)为两行显示是的最合适值为(-2.120,-0.60272),经几十次修改的最佳值，你也可也将图片保存为当前CUGLogoHome.pdf的分辨率(982×106)，这样就不必更改此处参数
    \maketitle
