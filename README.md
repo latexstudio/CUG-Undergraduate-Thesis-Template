@@ -17,10 +17,10 @@ LaTeX与Word比较: http://zzg34b.w3.c361.com/homepage/compareWord.htm
 如果很不幸(当然，我是十分幸运的)，万一你遇到了一个只知道Word，要求必需提交doc格式论文的老师(我想地大因该不会有这样的情况吧),   DON'T PANIC!,只需三步，文论就可以编成doc格式:
 
 
-1.编译得到pdf;
+1.编译源文件得到pdf;
 
 
-2.用Adobe Acrobat 另存为Word(这一步得到的doc文件中数学公式会惨不忍睹),下一步解决;
+2.用Adobe Acrobat 或Nitro(特别推荐,它转换出来的表格和图像完全保留了原样，特别是页面布局和原pdf一模一样，数学公式也几乎不需要大的改动，在我看来是优于AdobeAcrobat的，下载地址 http://www.nitropdf.com/ ，可试用)另存为Word(这一步得到的doc文件中数学公式可能会惨不忍睹),下一步解决;
 
 
 3.下载tex2word( 一个Word 插件 ，下载地址 http://www.chikrii.com/products/tex2word/ ,有30天试用期)，安装后用Word打开主tex文件(打开Word->打开->下拉列表中选择tex格式->选定主tex文件->打开)，得到一个Word文件，此时你会发现，虽然这个文件里的其它排版都很糟糕，但公式却很完整漂亮,将这一步得到的doc文件和上一步得到的doc文件一对比，你应该知道怎么做了.
@@ -28,11 +28,6 @@ LaTeX与Word比较: http://zzg34b.w3.c361.com/homepage/compareWord.htm
 
 
 =========================================================
-
-
-
-
-
 
 
 
@@ -92,5 +87,4 @@ ading
 
 
 
-其它未尽事宜请读各文件中的注释和各ReadMe.txt文件 
-						或邮箱:cug_yangyuancong@hotmail.com
+其它未尽事宜请读各文件中的注释和各ReadMe.txt文件 或邮箱:cug_yangyuancong@hotmail.com
