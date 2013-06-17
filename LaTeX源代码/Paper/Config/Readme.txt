@@ -4,7 +4,7 @@ CUGthesis-c5size-270mm×195mm   这是学校要求的格式，页边距上下左右都为2.5cm 纸张
 CUGthesis.cls  才是book类原生版本，CUGthesis-c5size-270mm×195mm更改的部分有
 
 1、更改字号大小 页面布局 行距
-\LoadClass[cs5size,fancyhdr,fntef,punct,amstex]{ctexbook}[2005/11/25] 
+\LoadClass[c5size,fancyhdr,fntef,punct]{ctexbook}[2005/11/25] 
 
 \RequirePackage[paperheight=270mm,paperwidth=195mm,top=25mm,bottom=25mm,left=25mm,right=25mm,headsep=10pt,head=15mm,foot=17.5mm]{geometry}
 \linespread{1.5}\selectfont

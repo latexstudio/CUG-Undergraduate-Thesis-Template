@@ -1,49 +1,49 @@
 % !TEX encoding = System
 % !Mode:: "TeX:UTF-8"
 %%
-%% This file `CUGthesis-c5size-270mmï¿½ï¿½195mm.cls', which is written by Yang Bo based on `CUGthesis.cls',
+%% This file `CUGthesis-c5size-270mm¡Á195mm.cls', which is written by Yang Bo based on `CUGthesis.cls',
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{Config/CUGthesis-c5size-270mmï¿½ï¿½195mm}
-  [2013/06/04  v0.2  CUGthesis-c5size-270mmï¿½ï¿½195mm document class]
-%%ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î£¨Ä¬ï¿½ï¿½Îªï¿½ï¿½ï¿½Æ£ï¿½
+\ProvidesClass{Config/CUGthesis-c5size-270mm¡Á195mm}
+  [2013/06/04  v0.2  CUGthesis-c5size-270mm¡Á195mm document class]
+%%±¾¿ÆÑ¡Ïî£¨Ä¬ÈÏÎª±¾¿Æ£©
 %%
 \newif\ifisundergraduate\isundergraduatetrue
 \DeclareOption{undergraduate}{\isundergraduatetrue}
 \DeclareOption{ohno}{\isundergraduatefalse}
-%%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢Ñ¡ï¿½ï¿½
+%%»ù½ðÐÅÏ¢Ñ¡Ïî
 \newif\ifCUGT@fundinfo \CUGT@fundinfotrue
 \DeclareOption{nofundinfo}{\CUGT@fundinfofalse}
-%%ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½
+%%ÅÅ°æÒýÇæÑ¡Ïî
 \newif\ifCUGT@dvips \CUGT@dvipsfalse
 \DeclareOption{dvips}{\CUGT@dvipstrue}
 \DeclareOption{dvipdfm}{\CUGT@dvipsfalse}
 \DeclareOption{pdftex}{\CUGT@dvipsfalse}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbook}}
 \ProcessOptions
-%%ï¿½ï¿½ï¿½ï¿½ctexbookï¿½Äµï¿½ï¿½ï¿½
-%ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½Æºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Â¸ï¿½Ê½ï¿½Ïï¿½ï¿½Ó¡ï¿½ï¿½ï¿½Äµï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-\LoadClass[c5size,fancyhdr,fntef,punct]{ctexbook}[2005/11/25]  %c5size  5ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò³ï¿½ß¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¶ï¿½Îª2.5cm Ö½ï¿½Å´ï¿½Ð¡Îª 270mmï¿½ï¿½195mm ,Ò³Ã¼15mmï¿½ï¿½Ò³ï¿½ï¿½17.5mm
-\CTEXoptions[today=small]  %Ö´ï¿½ï¿½\todayÊ±ï¿½ï¿½Ê¾ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½2013ï¿½ï¿½6ï¿½ï¿½2 ï¿½ï¿½
-\RequirePackage{etex}  %Ê¹ï¿½ï¿½etexï¿½ï¿½ï¿½ï¿½texï¿½ï¿½256ï¿½ï¿½ï¿½ï¿½   http://ctan.org/pkg/etex/
-%%ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½×±ï¿½Ê¾ï¿½ï¿½ A4ï¿½ï¿½×¼
+%%¼ÓÔØctexbookÎÄµµÀà
+%¸ÐÐ»³ÂÏÄÔÆºÍÍõÕñÕâÁ½Î»ÏÈÇý£¬ËûÃÇÊÇÊ×´ÎÊ¹ÓÃÒÔÏÂ¸ñÊ½Ìá½»´òÓ¡ÂÛÎÄµÄÈË£¬·´¸´¶à´Î²ÅÓÐÕâÑùµÄÉèÖÃ
+\LoadClass[c5size,fancyhdr,fntef,punct]{ctexbook}[2005/11/25]  %c5size  5ºÅ×Ö £¬Ò³±ß¾àÉÏÏÂ×óÓÒ¶¼Îª2.5cm Ö½ÕÅ´óÐ¡Îª 270mm¡Á195mm ,Ò³Ã¼15mm£¬Ò³½Å17.5mm
+\CTEXoptions[today=small]  %Ö´ÐÐ\todayÊ±ÏÔÊ¾¸ñÊ½ÏñÕâÑù £º2013Äê6ÔÂ2 ÈÕ
+\RequirePackage{etex}  %Ê¹ÓÃetex½â³ýtexµÄ256ÏÞÖÆ   http://ctan.org/pkg/etex/
+%%¶¨ÒåÒ³Ãæ²ÎÊý£¨¸öÈË¸üÇãÏòÓÚÓÃºÁÃ×±íÊ¾£© A4±ê×¼
 \RequirePackage[paperheight=270mm,paperwidth=195mm,top=25mm,bottom=25mm,left=25mm,right=25mm,headsep=10pt,head=15mm,foot=17.5mm]{geometry}
-\linespread{1.5}\selectfont  %ï¿½Ð¾ï¿½1.5
+\linespread{1.5}\selectfont  %ÐÐ¾à1.5
 %%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼Ò³Ò³ï¿½ß¾à·´ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ 2013.6.1
-%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼Ò³Ò³ï¿½ß¾à·´ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½Ò³ï¿½ß¾ï¿½Îªï¿½ï¿½Õ­ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½Ò³È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½Ê±ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ­ï¿½ï¿½Å¼ï¿½ï¿½Ò³ï¿½ï¿½Õ­ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼Ò³Ò³ï¿½ß¾ï¿½	http://stackoverflow.com/questions/2565755/latex-book-class-twosided-document-with-wrong-margins
-%×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹Û²ï¿½ï¿½ï¿½ï¿½ï¿½
-%\let\tmp\oddsidemargin                          %ï¿½Î¿ï¿½cï¿½ï¿½ï¿½ÔµÄ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+%%%%%%%%%%%%%%%%Ò»ÏÂÐÞÕýÆæÅ¼Ò³Ò³±ß¾à·´ÁËµÄÎÊÌâ 2013.6.1
+%ÐÞÕýÆæÅ¼Ò³Ò³±ß¾à·´ÁËµÄÎÊÌâ,ÎÊÌâÃèÊö£ºÆæÊýÒ³µÄÒ³±ß¾àÎª×óÕ­ÓÒ¿í£¬¶øÅ¼ÊýÒ³È´ÊÇ×ó¿íÓÒÕ­£¬Õý³£×°¶©Ê±ÐèÒªµÄÊÇÆæÊýÒ³×ó¿íÓÖÕ­£¬Å¼ÊýÒ³×óÕ­ÓÒ¿í£»½â¾ö·½·¨£¬µ÷»»Ô­À´µÄÆæÅ¼Ò³Ò³±ß¾à	http://stackoverflow.com/questions/2565755/latex-book-class-twosided-document-with-wrong-margins
+%×¢ÊÍÒÔÏÂËÄÐÐ¹Û²ì½á¹û
+%\let\tmp\oddsidemargin                          %²Î¿¼cÓïÑÔµÄ¾­µäÎÊÌâ:ÈçºÎµ÷»»Á½¸ö²ÎÊýµÄÖµ
 %\let\oddsidemargin\evensidemargin
 %\let\evensidemargin\tmp
 %\reversemarginpar
-%%%%%%%%%%%%%%%%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼Ò³Ò³ï¿½ß¾à·´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-%%ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
+%%%%%%%%%%%%%%%%ÒÔÉÏÐÞÕýÆæÅ¼Ò³Ò³±ß¾à·´ÏìÎÊÌâ
+%%¼ÓÔØºê°ü
 %% check pdfTeX mode
 \RequirePackage{ifpdf,ifxetex}
 %% math packages
 \RequirePackage{amsmath,amsthm,amsfonts,amssymb,bm,txfonts}
-\RequirePackage{Package/vector} %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ó¡Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ \bvec{} ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ \buvec ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é¿´ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ http://mirror.bjtu.edu.cn/CTAN/macros/latex/contrib/vector/vector.pdf
-\RequirePackage{yhmath}                          %ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½AB ,\wideparen{AB} ) ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/yhmath/yhmath.pdf
+\RequirePackage{Package/vector} %ÏòÁ¿ºê°ü£¬¸÷ÖÖÏòÁ¿ Ó¡Ë¢ÌåÏòÁ¿ \bvec{} µ¥Î»ÏòÁ¿ \buvec µÈ£¬¾ßÌå²é¿´ºê°üËµÃ÷ http://mirror.bjtu.edu.cn/CTAN/macros/latex/contrib/vector/vector.pdf
+\RequirePackage{yhmath}                          %¸üºÃµÄ×ÔÊÊÓ¦ÊýÑ§·ûºÅ (±ÈÈç »¡AB ,\wideparen{AB} ) ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/yhmath/yhmath.pdf
 %% graphics packages
 \RequirePackage{graphicx}
 \RequirePackage{titletoc}
@@ -59,43 +59,43 @@
 \setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
 \setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
 \setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
-\RequirePackage{ccmap} %Ê¹ï¿½ï¿½ï¿½Éµï¿½pdfï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý¿É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-\RequirePackage{times}  %Times New Roman Ó¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-%%ï¿½ï¿½ï¿½ï¿½Îªï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½%%%
+\RequirePackage{ccmap} %Ê¹Éú³ÉµÄpdfÎÄ¼þÄÚÈÝ¿É±»Õý³£¸´ÖÆ
+\RequirePackage{times}  %Times New Roman Ó¢ÎÄ×ÖÌå
+%%ÒÔÏÂÎª·Ç±ØÐèºê°ü£¬¿ÉÉ¾¼õ%%%
 
 \RequirePackage{CJK,CJKnumb}
-\RequirePackage{textcomp}  %ï¿½ï¿½ï¿½Ï¶ï¿½Ö®ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+\RequirePackage{textcomp}  %ÉãÊÏ¶ÈÖ®ÀàµÄ·ûºÅ
 \RequirePackage{booktabs}
 
 %\RequirePackage[framed,numbered,autolinebreaks,useliterate]{Package/Mcode}
 \RequirePackage{Package/Pagenote}
 \RequirePackage{Package/Endnotes}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ï¿½ï¿½×¢%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{pifont,bbding}% \RihtHand ï¿½È·ï¿½ï¿½ï¿½
-\RequirePackage[%perpage, %ÎªÃ¿Ò³ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-		stable,	 %ï¿½ï¿½ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ÐµÄ½ï¿½×¢ï¿½ï¿½Í¬ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½Ò³Ã¼Ö®ï¿½ï¿½
-		multiple %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄ²ï¿½ï¿½Å½ï¿½×¢ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½Ï·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½
-		%symbol*	  %ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¸ï¿½Îª * ï¿½ÅµÈ²ï¿½Í¬ï¿½Ä·ï¿½ï¿½ï¿½
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%½Å×¢%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{pifont,bbding}% \RihtHand µÈ·ûºÅ
+\RequirePackage[%perpage, %ÎªÃ¿Ò³½Å×¢µ¥¶ÀÅÅÐò
+		stable,	 %±ÜÃâÕÂ½Ú±êÌâÖÐµÄ½Å×¢ËæÍ¬ÕÂ½Ú±êÌâ³öÏÖÔÚÄ¿Â¼»òÒ³Ã¼Ö®ÖÐ
+		multiple %¸øÕýÎÄÖÐÁ½¸öÒÔÉÏµÄ²¢ÅÅ½Å×¢±êºÅÖ®¼ä¼ÓÉÏ·Ö¸ô¶ººÅ
+		%symbol*	  %½«½Å×¢µÄÊý×ÖÐòºÅ¸ÄÎª * ºÅµÈ²»Í¬µÄ·ûºÅ
 		]{footmisc}
 %\DefineFNsymbols{lamport-mystyle}{\SnowflakeChevron \OrnamentDiamondSolid  \FourClowerOpen \FourStarOpen \SixFlowerPetalDotted \JackStarBold \NibSolidLeft \Cross \CrossClowerTips \CrossMaltese \Asterisk\FiveFlowerPetal \FiveStar  \AsteriskCenterOpen \AsteriskRoundedEnds  \SixFlowerPetalRemoved \SixFlowerRemovedOpenPetal\EightAsterisk \EightFlowerPetalRemoved \Snowflake  \S * {**} \textparagraph \textdagger \textdaggerdbl \PencilLeft }
 %\setfnsymbol{lamport-mystyle}
 %if Specified a symbol which must be used in math enviroment ,then chang "symbol*" to "symbol" and use the define \DefineFNsymbols{lamport}[math]{....symbol....}  ---\DefineFNsymbols{lamport}[math]{*\dagger\ddagger\S\P\|{**}{\dagger\dagger}{\ddagger\ddagger}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½
-%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä½ï¿½×¢     http://www.tex.ac.uk/cgi-bin/texfaq2html?label=run-fn-nos
-%ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½Ú£ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½Îª0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä½ï¿½×¢ï¿½ï¿½ï¿½ï¿½
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%½Å×¢¼ÆÊýÆ÷ÐÞ¸´
+%²»ÈÃÕû¸öÎÄÕÂÖÐ³öÏÖÏàÍ¬µÄ½Å×¢     http://www.tex.ac.uk/cgi-bin/texfaq2html?label=run-fn-nos
+%²»Ê¹ÓÃÏÂÃæÕâÁ½ÐÐ£¬ÔòÃ¿µ±µ½ÐÂÕÂ½Ú£¬½Å×¢¼ÆÊýÆ÷±ã»áÖØÐÂ±äÎª0£¬ÕâÑùÕÂ½ÚÖÐ»á³öÏÖÏàÍ¬µÄ½Å×¢·ûºÅ
 %\RequirePackage{chngcntr}
 %\counterwithout*{footnote}{chapter}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ï¿½ï¿½×¢%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%½Å×¢%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{xcolor}
-\RequirePackage{multirow}    %ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½
+\RequirePackage{multirow}    %¿çÐÐºê°ü
 
-%%ï¿½ï¿½ï¿½ï¿½Îªï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½%%%
-\RequirePackage{diagbox}    %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·
+%%ÒÔÏÂÎª·Ç±ØÐèºê°ü£¬¿ÉÉ¾¼õ%%%
+\RequirePackage{diagbox}    %ÖÆ×÷±íÍ·
 \RequirePackage[figuresright]{rotating}
-\RequirePackage{tagging}    %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+\RequirePackage{tagging}    %Ìõ¼þ±àÒë
 
-%%ï¿½ï¿½ï¿½ï¿½Îªï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½%%%
+%%ÒÔÉÏÎª·Ç±ØÐèºê°ü£¬¿ÉÉ¾¼õ%%%
 
 
 %% packages and settings depend on PDF mode
@@ -126,30 +126,30 @@
               plainpages=false,%
             pdfstartview=FitH}
 
-%%ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+%%¼ÓÔØ²ÎÊýÎÄ¼þ
 \AtEndOfPackage{\makeatletter\input{Config/CUGthesis.cfg}\makeatother}
-%%ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-%ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ý´ï¿½ï¿½ß¶ï¿½ï¿½ï¿½
-\RequirePackage{array}                %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\while ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ï¿½I
+%%×Ô¶¨ÒåÃüÁî
+%ÒÔÏÂÎªºá×Ý´ÖÏß¶¨Òå
+\RequirePackage{array}                %¶¨Òåºá´ÖÏß\while ºÍ×Ý´ÖÏßI
 \newcolumntype{I}{!{\vrule width 2pt}}
 \newlength\savewidth
 \newcommand\shline{\noalign{\global\savewidth\arrayrulewidth
                             \global\arrayrulewidth 2pt}%
                    \hline
                    \noalign{\global\arrayrulewidth\savewidth}}
-%ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ý´ï¿½ï¿½ß¶ï¿½ï¿½ï¿½
-%%Í¼ï¿½ï¿½
-\renewcommand{\captionlabeldelim}{} %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  " Í¼(ï¿½ï¿½)2: Ê¾ï¿½ï¿½" ï¿½ÐµÄ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ ":" ,ï¿½ï¿½ï¿½ï¶¨ï¿½ï¿½Îªï¿½ï¿½
-\renewcommand{\captionlabelsep}{\hspace{1em}} % ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-\renewcommand{\captionlabelfont}{\songti\zihao{-5}} %ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-\renewcommand{\captionfont}{\songti\zihao{-5}} %ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½ï¿½ï¿½
-\newcommand{\excaption}{\songti\zihao{-5}}  %ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½â¸½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½ï¿½ï¿½
+%ÒÔÉÏÎªºá×Ý´ÖÏß¶¨Òå
+%%Í¼±í
+\renewcommand{\captionlabeldelim}{} %¶¨ÒåÈç  " Í¼(±í)2: Ê¾Àý" ÖÐµÄ¼ä¸ô·ûºÅ,Èç ":" ,ÕâÀï¶¨ÒåÎª¿Õ
+\renewcommand{\captionlabelsep}{\hspace{1em}} % ¶¨ÒåÍ¼±í±àºÅÓë±êÌâ¼äµÄ¼ä¸ô¾àÀë
+\renewcommand{\captionlabelfont}{\songti\zihao{-5}} %¶¨ÒåÍ¼±í±êÇ©µÄ×ÖÌå
+\renewcommand{\captionfont}{\songti\zihao{-5}} %¶¨ÒåÍ¼±í±êÌâÄÚÈÝµÄ×ÖÌå
+\newcommand{\excaption}{\songti\zihao{-5}}  %¶¨ÒåÍ¼±í±êÌâ¸½¼ÓÄÚÈÝ×ÖºÅ×ÖÌå
 
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
   \thispagestyle{empty}%
   \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \renewcommand{\floatpagefraction}{0.80}
-%\bibliographystyle{plain}      %ï¿½ï¿½Ê¾ï¿½Î¿ï¿½ï¿½ï¿½ï¿½×µÄ¸ï¿½Ê½Îªplain text ï¿½ï¿½È¡ï¿½ï¿½×¢ï¿½Íºó¿´¿ï¿½Ó¢ï¿½Ä²Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½Í¬
+%\bibliographystyle{plain}      %±íÊ¾²Î¿¼ÎÄÏ×µÄ¸ñÊ½Îªplain text £¬È¡Ïû×¢ÊÍºó¿´¿´Ó¢ÎÄ²Î¿¼ÎÄÏ×ÓëÔ­À´µÄÓÐÊ²Ã´²»Í¬
 \newcommand\CUGTspace{\protect\CTEX@spaceChar\protect\CTEX@spaceChar}
 \def\CUGT@getfileinfo#1 #2 #3\relax#4\relax{%
   \def\CUGTfiledate{#1}%
@@ -192,9 +192,9 @@
 \newcommand\reviewerstitles[1]{\def\CUGT@value@reviewerstitles{#1}}
 \newcommand\reviewers[1]{\def\CUGT@value@reviewers{#1}}
 \newcommand\authorheader[1]{\def\CUGT@value@authorheader{#1}}
-%%ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½
-\newcommand{\ucite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  % ï¿½ï¿½ï¿½ï¿½2
-%%ï¿½Ô¶ï¿½ï¿½ï¿½frontmatterï¿½ï¿½Ê½
+%%×Ô¶¨Òå²Î¿¼ÎÄÏ×ÉÏ±êÒýÓÃ
+\newcommand{\ucite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}  % ·½·¨2
+%%×Ô¶¨Òåfrontmatter¸ñÊ½
 \newif\if@frontmatter\@frontmattertrue
 \renewcommand\frontmatter{%
 \cleardoublepage
@@ -206,7 +206,7 @@
 \fancyhf{}%
 \renewcommand{\headrulewidth}{0pt}
 }
-%%ï¿½Ô¶ï¿½ï¿½ï¿½mainmatterï¿½ï¿½Ê½
+%%×Ô¶¨Òåmainmatter¸ñÊ½
 \renewcommand\mainmatter{%
 \cleardoublepage
 \@frontmatterfalse
@@ -217,16 +217,16 @@
   \fancyhf{}%
   \fancyhead[LO,RE]{\songti\zihao{-5} \CUGT@value@submitdate}
   \fancyhead[CO]{\songti\zihao{-5} \CUGT@value@school\CUGT@value@degree\CUGT@label@thesis}
-  \fancyhead[CE]{\songti\zihao{-5} \CUGT@value@authorheader ï¿½ï¿½~~ \CUGT@value@titlemark}
+  \fancyhead[CE]{\songti\zihao{-5} \CUGT@value@authorheader £º~~ \CUGT@value@titlemark}
   \fancyhead[LE,RO]{\songti\zihao{-5} ~\thepage~}
 }
 \pagestyle{fancy}
   \fancyhf{}
   \fancyhead[LO,RE]{\songti\zihao{-5} \CUGT@value@submitdate}
   \fancyhead[CO]{\songti\zihao{-5} \CUGT@value@school\CUGT@value@degree\CUGT@label@thesis}
-  \fancyhead[CE]{\songti\zihao{-5} \CUGT@value@authorheader ï¿½ï¿½~~ \CUGT@value@titlemark}
+  \fancyhead[CE]{\songti\zihao{-5} \CUGT@value@authorheader £º~~ \CUGT@value@titlemark}
   \fancyhead[LE,RO]{\songti\zihao{-5} ~\thepage~}
-%%ï¿½ï¿½ï¿½ï¿½Ò³Ã¼Ë«ï¿½ï¿½
+%%ÕýÎÄÒ³Ã¼Ë«Ïß
 \newcommand{\makeheadrule}{%
 \makebox[0pt][l]{\rule[0.55\baselineskip]{\headwidth}{0.4pt}}%
 \rule[0.7\baselineskip]{\headwidth}{0.4pt}}
@@ -235,21 +235,21 @@
 \makeheadrule}}
 \makeatother%
 }
-%%ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½Ê½
+%%ÉèÖÃÄ¿Â¼¸ñÊ½
 \setcounter{tocdepth}{3} \setcounter{secnumdepth}{3}
 \dottedcontents{chapter}[3.5em]{\songti\zihao{5}}{4em}{0.5pc}
 \dottedcontents{section}[5.5em]{\songti\zihao{5}}{3em}{0.5pc}
 \dottedcontents{subsection}[6.1em]{\songti\zihao{5}}{1.7em}{0.5pc}
-%%ï¿½ï¿½ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
-\renewcommand\chaptername{ï¿½ï¿½\CJKnumber{\value{chapter}}ï¿½ï¿½}
+%%¶¨ÒåÕÂ½Ú±êÌâ¸ñÊ½
+\renewcommand\chaptername{µÚ\CJKnumber{\value{chapter}}ÕÂ}
 \renewcommand{\thesection}{\S~\arabic{chapter}.\arabic{section}}
 \renewcommand{\thesubsection}{\hspace{-3ex}\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ¼°ï¿½Ì¶ï¿½ï¿½ï¿½Ï¢Ò³ï¿½ï¿½
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%¶¨Òå·âÃæ¼°¹Ì¶¨ÐÅÏ¢Ò³Ãæ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½1
+%%%ÖÐÎÄ·âÃæ1
 \newcommand\makecover{%
   \cleardoublepage
   \thispagestyle{empty}
@@ -282,7 +282,7 @@
   \end{center}
 }
 
-%%%ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½2
+%%%ÖÐÎÄ·âÃæ2
 \renewcommand\maketitle{%
   \cleardoublepage
   \thispagestyle{empty}
@@ -305,7 +305,7 @@
     \begin{flushleft}
     \songti\zihao{3}
     \def\tabcolsep{1pt}
-    \def\arraystretch{1.0}%ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½
+    \def\arraystretch{1.0}%¶¨Òå±í¸ñÃ¿ÐÐ¼äµÄÐÐ¼ä¾à
 \begin{tabular}{l@{:}rcl@{:}r}
 \CUGT@label@author~~&~~\CUGT@value@author &\hspace*{2em}&\CUGT@label@studentnumber~~&~~\CUGT@value@studentnumber\\
 \CUGT@label@institute~~&~~\CUGT@value@institute &\hspace*{2em}&\CUGT@label@major~~&~~\CUGT@value@major \\
@@ -327,7 +327,7 @@
   \end{center}
 }
 
-%%%Ó¢ï¿½Ä·ï¿½ï¿½ï¿½
+%%%Ó¢ÎÄ·âÃæ
 \newcommand\englishtitle[1]{\def\CUGT@value@englishtitle{#1}}
 \newcommand\englishauthor[1]{\def\CUGT@value@englishauthor{#1}}
 \newcommand\englishadvisorschool[1]{\def\CUGT@value@englishadvisorschool{#1}}
@@ -348,7 +348,7 @@
 	\normalfont\zihao{4}
     \def\tabcolsep{1pt}
     \def\arraystretch{1.0}
-    \begin{tabular}{r@{:}l}         %Ó¢ï¿½ï¿½Ê¹ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Õ¸ï¿½
+    \begin{tabular}{r@{:}l}         %Ó¢ÎÄÊ¹ÓÃÒ»¸ö¿Õ¸ñ
       \CUGT@label@englishauthor~&~\CUGT@value@englishauthor \\
       \CUGT@label@englishmajor ~ &~\CUGT@value@englishmajor \\
       \CUGT@label@englishadvisorschool~&~\CUGT@value@englishadvisorschool \\
@@ -367,41 +367,41 @@
   \fi
 }
 
-%%%Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+%%%Ô­´´ÐÔÉùÃ÷
 \newcommand\makestatement{%
   \cleardoublepage
   \thispagestyle{empty}
   \begin{center}
   \vspace*{3em}	
-	\heiti\zihao{-2}ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½Ê´ï¿½Ñ§ï¿½ï¿½ï¿½äººï¿½ï¿½\CUGT@value@degree ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	\heiti\zihao{-2}ÖÐ¹úµØÖÊ´óÑ§£¨Îäºº£©\CUGT@value@degree ±ÏÒµÂÛÎÄÔ­´´ÐÔÉùÃ÷
 	\vspace{1em}
   \end{center}
   \vspace{5em}
-  \songti\zihao{-4}\hspace{2em} ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½\CUGT@value@degree ï¿½ï¿½Òµï¿½ï¿½ï¿½Ä¡ï¿½\CUGT@value@titlemark ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½Úµï¿½Ê¦ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Â½ï¿½ï¿½Ðµï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ÃµÄ³É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½×¡ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÈ¾ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ½ï¿½ï¿½ÛºÍ½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³É¹ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½Ê´ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§Î»ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¹ï¿½ï¿½Ä²ï¿½ï¿½Ï¡ï¿½Í¬Ê±ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎºÎ¹ï¿½ï¿½×µï¿½ï¿½ï¿½Ê¦ï¿½ï¿½Í¬Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ð»ï¿½â¡£\par
-  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½\CUGT@value@degree ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Î¥ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Âºï¿½Ñ§ï¿½ï¿½ï¿½æ·¶ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½Ðµï¿½ï¿½É´Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎºÍ·ï¿½ï¿½Éºï¿½ï¿½ï¿½ï¿½ï¿½\\
+  \songti\zihao{-4}\hspace{2em} ±¾ÈËÖ£ÖØÉùÃ÷£º±¾ÈËËù³Ê½»µÄ\CUGT@value@degree ±ÏÒµÂÛÎÄ¡¶\CUGT@value@titlemark ¡·£¬ÊÇ±¾ÈËÔÚµ¼Ê¦µÄÖ¸µ¼ÏÂ½øÐÐµÄÊµÑéÐÔÑÐ¾¿¹¤×÷¼°È¡µÃµÄ³É¹û£¬ÂÛÎÄÖÐÒýÓÃ×ÔËûÈËµÄÎÄÏ×¡¢Êý¾Ý¡¢Í¼Ïñ¡¢×ÊÁÏµÈ¾ùÒÑÃ÷È·±ê×¢³ö£¬ÂÛÎÄÖÐµÄ½áÂÛºÍ½á¹ûÎª±¾ÈË¶ÀÁ¢Íê³É£¬²»°üº¬ËûÈË³É¹û¼°Îª»ñµÃÖÐ¹úµØÖÊ´óÑ§»òÆäËü½ÌÓý»ú¹¹µÄÑ§Î»»òÖ¤Êé¶øÊ¹ÓÃ¹ýµÄ²ÄÁÏ¡£Í¬Ê±£¬¶Ô±¾ÑÐ¾¿Ëù×ö¹ýÈÎºÎ¹±Ï×µÄÀÏÊ¦ºÍÍ¬Ñ§¾ùÒÑÔÚÂÛÎÄÖÐ×÷ÁËÃ÷È·µÄËµÃ÷²¢±íÊ¾ÁËÐ»Òâ¡£\par
+  ±¾ÈËËù³Ê½»µÄ\CUGT@value@degree ±ÏÒµÂÛÎÄÃ»ÓÐÎ¥·´Ñ§ÊõµÀµÂºÍÑ§Êõ¹æ·¶£¬Ã»ÓÐÇÖÈ¨ÐÐÎª£¬²¢Ô¸Òâ³Ðµ£ÓÉ´Ë¶ø²úÉúµÄ·¨ÂÉÔðÈÎºÍ·¨ÂÉºó¹û¡£\\
    \ \\ \ \\ \  \\
-      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½Ç©ï¿½Ö£ï¿½ï¿½ï¿½\underline{ \hspace{5em}   }   \hspace{4em}   ï¿½ï¿½ï¿½Ú£ï¿½\underline{ï¿½ï¿½ï¿½ï¿½}ï¿½ï¿½\underline{ï¿½ï¿½ï¿½ï¿½}ï¿½ï¿½\underline{ï¿½ï¿½ï¿½ï¿½}ï¿½ï¿½
+      ÂÛÎÄ×÷Õß£¨Ç©×Ö£©£º\underline{ \hspace{5em}   }   \hspace{4em}   ÈÕÆÚ£º\underline{¡¡¡¡}Äê\underline{¡¡¡¡}ÔÂ\underline{¡¡¡¡}ÈÕ
   }
 
-%%%ï¿½ï¿½È¨ï¿½ï¿½
+%%%ÊÚÈ¨Êé
 \newcommand\makeauthorization{%
   \cleardoublepage
   \thispagestyle{empty}
   \begin{center}	
-	\heiti\zihao{-2}ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½Ê´ï¿½Ñ§ï¿½ï¿½ï¿½äººï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½
+	\heiti\zihao{-2}ÖÐ¹úµØÖÊ´óÑ§£¨Îäºº£©ÂÛÎÄÊ¹ÓÃÊÚÈ¨Êé
 	\vspace{2em}
   \end{center}
-  \songti\zihao{4}\hspace{2em} ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½Ê´ï¿½Ñ§ï¿½ï¿½ï¿½äººï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½Ó°Ó¡ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶Î±ï¿½ï¿½æ±¾ï¿½ï¿½ï¿½Ä£ï¿½
-  Ñ§Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹Ø²ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄµÄµï¿½ï¿½Ó°ï¿½È«ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½×´ï¿½ï¿½Ý·ï¿½ï¿½ï¿½ï¿½ï¿½
-  Í¬ï¿½ï¿½ï¿½ï¿½Ð£Ô°ï¿½ï¿½ï¿½ï¿½ï¿½á¹©È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½ï¿½
+  \songti\zihao{4}\hspace{2em} ±¾ÈËÊÚÈ¨ÖÐ¹úµØÖÊ´óÑ§£¨Îäºº£©¿É²ÉÓÃÓ°Ó¡¡¢ËõÓ¡¡¢Êý×Ö»¯»òÆäËü¸´ÖÆÊÖ¶Î±£´æ±¾ÂÛÎÄ£»
+  Ñ§Ð£¿ÉÏò¹ú¼ÒÓÐ¹Ø²¿ÃÅ»ò»ú¹¹ËÍ½»±¾ÂÛÎÄµÄµç×Ó°æÈ«ÎÄ£¬±àÈëÓÐ¹ØÊý¾Ý¿â½øÐÐ¼ìË÷¡¢ÏÂÔØ¼°ÎÄÏ×´«µÝ·þÎñ£»
+  Í¬ÒâÔÚÐ£Ô°ÍøÄÚÌá¹©È«ÎÄä¯ÀÀºÍÏÂÔØ·þÎñ¡£
 
 \vspace{4em}
-\hspace{4em} ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½\CUGTunderline[170pt]{}        \\
+\hspace{4em} ÂÛÎÄ×÷ÕßÇ©Ãû£º\CUGTunderline[170pt]{}        \\
 
-\hspace{4em} ï¿½ï¿½\hspace{6em}ï¿½Ú£ï¿½  \CUGTunderline[45pt]{\hspace{3em}} ï¿½ï¿½\CUGTunderline[45pt]{\hspace{2em}}ï¿½ï¿½\CUGTunderline[45pt]{\hspace{2em}}ï¿½ï¿½
+\hspace{4em} ÈÕ\hspace{6em}ÆÚ£º  \CUGTunderline[45pt]{\hspace{3em}} Äê\CUGTunderline[45pt]{\hspace{2em}}ÔÂ\CUGTunderline[45pt]{\hspace{2em}}ÈÕ
 }%
 
-%%ï¿½ï¿½ï¿½ï¿½ÕªÒª
+%%ÖÐÎÄÕªÒª
 \newenvironment{abstract}
   {%
   \cleardoublepage
@@ -411,7 +411,7 @@
   \heiti\zihao{3}\CUGT@value@title \\
   \vspace{1em}
   \def\arraystretch{1.0}
- \begin{tabular}{r@{\zihao{-4}{:}}l}  %ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ð¡ï¿½ï¿½Ã°ï¿½Å´ï¿½Ð¡ï¿½ÕºÃ£ï¿½ï¿½ï¿½È»Ì«ï¿½ï¿½
+ \begin{tabular}{r@{\zihao{-4}{:}}l}  %½«·Ö¸ô·û¸Ä³ÉÐ¡ËÄÃ°ºÅ´óÐ¡¸ÕºÃ£¬²»È»Ì«´ó
   \songti\zihao{-4}\CUGT@label@authorshort~~&~~\songti\zihao{-4}\CUGT@value@author \\
   \songti\zihao{-4} \CUGT@label@advisorschoolshort~~&~~\songti\zihao{-4}\CUGT@value@advisorschool \\
    %  \songti\zihao{-4}\CUGT@label@advisorenterpriseshort~~&~~\songti\zihao{-4}\CUGT@value@advisorenterprise \\
@@ -422,11 +422,11 @@
   \hspace{1.3em}
   \songti\zihao{5}
   }{}
-%%ï¿½ï¿½ï¿½Ä¹Ø¼ï¿½ï¿½ï¿½
+%%ÖÐÎÄ¹Ø¼ü´Ê
 \newcommand\keywords[1]{%
   \vspace{2ex}\noindent{\heiti\zihao{5} \CUGT@label@keywords~\heiti{\zihao{5}{\textbf{:}}}} ~~\heiti\zihao{5}#1}
 
-%%Ó¢ï¿½ï¿½ÕªÒª
+%%Ó¢ÎÄÕªÒª
 \newenvironment{englishabstract}
   {%
   \cleardoublepage
@@ -436,7 +436,7 @@
    \zihao{2}\CUGT@value@englishtitle \\
  \vspace{0.2em}
 \def\arraystretch{.5}
- \begin{tabular}{r@{\zihao{-4}{:}}l}  %ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ð¡ï¿½ï¿½Ã°ï¿½Å´ï¿½Ð¡ï¿½ÕºÃ£ï¿½ï¿½ï¿½È»Ì«ï¿½ï¿½
+ \begin{tabular}{r@{\zihao{-4}{:}}l}  %½«·Ö¸ô·û¸Ä³ÉÐ¡ËÄÃ°ºÅ´óÐ¡¸ÕºÃ£¬²»È»Ì«´ó
   \zihao{-4}\CUGT@label@englishauthor~&~ \zihao{-4}\CUGT@value@englishauthor \\
  \zihao{-4} \CUGT@label@englishadvisorschool~ &~\zihao{-4}\CUGT@value@englishadvisorschool \\
  %\zihao{-4}\CUGT@label@englishadvisorenterprise~&~\songti\zihao{-4}\CUGT@value@englishadvisorenterprise \\
@@ -448,10 +448,10 @@
   \zihao{5}
   }{}
 
-%%Ó¢ï¿½Ä¹Ø¼ï¿½ï¿½ï¿½
+%%Ó¢ÎÄ¹Ø¼ü´Ê
 \newcommand\englishkeywords[1]{%
   \vspace{2ex}\noindent{\bf\zihao{5} \CUGT@label@englishkeywords~\zihao{5}{\textbf{:}}  ~~\bf \zihao{5}#1}}
-%ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì«ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
+%ÒÔÏÂ´úÂëºê°ü£¨Õâ¸öºê°üÌ«°ÔµÀ£¬Òò´Ë×îºóµ÷ÓÃ£©
 \RequirePackage{listings}
 \lstset{
   language=Matlab,
@@ -460,16 +460,16 @@
   numbers=left,
   keywordstyle=\color{blue},
   numberstyle={\tiny\color{lightgray}},
-  stepnumber=1,                      %ï¿½ÐºÅ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½
+  stepnumber=1,                      %ÐÐºÅ»áÖðÐÐÍùÉÏµÝÔö
   numbersep=5pt,
   commentstyle=\small\color{red},
   backgroundcolor=\color[rgb]{0.95,1.0,1.0},
-  showspaces=false,                  %ï¿½ï¿½Ê¾ï¿½Õ¸ï¿½
+  showspaces=false,                  %ÏÔÊ¾¿Õ¸ñ
   showtabs=false,
-  breaklines=true,                   %ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+  breaklines=true,                   %×Ô¶¯»»ÐÐ
   frame=shadowbox, framexleftmargin=5mm, rulesepcolor=\color{red!20!green!20!blue!20!},
     flexiblecolumns=true,
-    breaklines=true,            %ï¿½Ô¹ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    breaklines=true,            %¶Ô¹ý³¤µÄ´úÂë×Ô¶¯»»ÐÐ
     breakautoindent=true,
     breakindent=1em,
    keepspaces=true,
@@ -481,13 +481,13 @@
   tabsize=4,
   aboveskip=1em,
   breaklines=tr,
-  extendedchars=false %ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³Ê±ï¿½ï¿½ï¿½Â½Ú±ï¿½ï¿½â£¬Ò³Ã¼ï¿½Èºï¿½ï¿½Ö²ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  extendedchars=false %ÕâÒ»ÌõÃüÁî¿ÉÒÔ½â¾ö´úÂë¿çÒ³Ê±£¬ÕÂ½Ú±êÌâ£¬Ò³Ã¼µÈºº×Ö²»ÏÔÊ¾µÄÎÊÌâ
 }
-%ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+%ÒÔÉÏ´úÂëºê°ü
 
-%ï¿½è¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+%Éè¶¨±í¸ñ¿í¶È
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
 \newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
 
 %%
-%% End of file `CUGthesis-c5size-270mmï¿½ï¿½195mm.cls'.
+%% End of file `CUGthesis-c5size-270mm¡Á195mm.cls'.
